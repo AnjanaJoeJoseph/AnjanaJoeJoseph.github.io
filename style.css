@@ -1276,20 +1276,29 @@ xclip
 }
 
 .hoverbutton {
-    background-color: #333333;
-    position: absolute;
-    color: #ffffff !important;
-    top: 70%;
-    font-size: 21px;
-    z-index: 12;
-    left: 0;
+   position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(0.8);
+
+    padding: 12px 28px;
+    background: #ffffff;
+    color: #000 !important;
+
+    border-radius: 30px;
+    font-size: 16px;
+    font-weight: 600;
+    text-decoration: none;
+
     opacity: 0;
-    right: 0;
-    width: 50px;
-    height: 50px;
-    line-height: 50px;
-    text-align: center;
-    margin: -20px auto;
+    transition: all 0.4s ease;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    white-space: nowrap;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.3);
 }
 
 .service-widget:hover .hoverbutton {
